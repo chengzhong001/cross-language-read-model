@@ -1,10 +1,28 @@
-# 跨语言读取模型
+# 跨语言读取 `pytotch` 模型
 
-## c++
+## 生成模型
 
-`cmake -B build && cmake --build build`
-`build/digit model/digit.jit image/sample.png`
+```shell
+python3 digit.py
+```
 
-## rust
+## 转化模型
 
-`cargo run`
+```shell
+python3 convert.py
+```
+
+## 读取模型
+
+### c++
+
+```shell
+cmake -B build && cmake --build build
+build/digit model/digit.jit image/sample.png
+```
+
+### rust
+
+```shell
+cargo run 
+```
